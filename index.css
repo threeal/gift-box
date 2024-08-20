@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.container > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10vh;
+}
+
+.message {
+  font-size: 3em;
+  margin: 0;
+  text-transform: uppercase;
+}
