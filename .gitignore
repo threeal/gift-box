@@ -1,0 +1,5 @@
+.*
+!.git*
+
+# Add additional glob patterns here to specify more files or directories to be ignored by Git.
+# Learn more: https://git-scm.com/docs/gitignore
