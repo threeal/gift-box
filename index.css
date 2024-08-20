@@ -27,3 +27,7 @@ body {
   margin: 0;
   text-transform: uppercase;
 }
+
+.message span {
+  display: inline-block;
+}
