@@ -9,13 +9,14 @@ body {
 
 .container {
   height: 100vh;
-  margin: 0 auto;
+  margin: auto;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
 
-.container > div {
+.birthday_scene {
+  visibility: hidden;
   position: absolute;
   left: 0;
   right: 0;
