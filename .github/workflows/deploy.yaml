@@ -1,0 +1,37 @@
+name: Deploy
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+jobs:
+  deploy-page:
+    name: Deploy Page
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      pages: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy-page.outputs.page_url }}
+    concurrency:
+      group: pages
+      cancel-in-progress: true
+    steps:
+      - name: Checkout Page
+        uses: actions/checkout@v4.1.7
+        with:
+          path: page
+          sparse-checkout: |
+            index.css
+            index.html
+            index.js
+          sparse-checkout-cone-mode: false
+
+      - name: Upload Page
+        uses: actions/upload-pages-artifact@v3.0.1
+        with:
+          path: page
+
+      - name: Deploy Page
+        id: deploy-page
+        uses: actions/deploy-pages@v4.0.5
