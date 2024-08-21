@@ -15,6 +15,13 @@ body {
   overflow: hidden;
 }
 
+.gift_box_scene {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30vh;
+}
+
 .birthday_scene {
   visibility: hidden;
   position: absolute;
