@@ -1,3 +1,5 @@
+not sure where to put this.
+
 for (const el of document.getElementsByClassName("message")) {
   el.innerHTML = el.innerHTML
     .split("")
