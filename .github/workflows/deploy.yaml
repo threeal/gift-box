@@ -34,4 +34,4 @@ jobs:
 
       - name: Deploy Page
         id: deploy-page
-        uses: actions/deploy-pages@v4.0.5
+        uses: actions/deploy-pages@v5.0.0
