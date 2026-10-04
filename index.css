@@ -9,13 +9,21 @@ body {
 
 .container {
   height: 100vh;
-  margin: 0 auto;
+  margin: auto;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
 
-.container > div {
+.gift_box_scene {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30vh;
+}
+
+.birthday_scene {
+  visibility: hidden;
   position: absolute;
   left: 0;
   right: 0;
